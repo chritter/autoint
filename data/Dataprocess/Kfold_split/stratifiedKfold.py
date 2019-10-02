@@ -93,7 +93,7 @@ def main():
     save_x_y(fold_index, train_x, train_y)
     print("save train_x_y done!")
 
-    fold_index = np.load(config.DATA_PATH +  "fold_index.npy")
+    fold_index = np.load(config.DATA_PATH +  "fold_index.npy",allow_pickle=True)
     save_i(fold_index)
     print("save index done!")
 
